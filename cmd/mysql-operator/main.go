@@ -40,7 +40,7 @@ var log = logf.Log.WithName("mysql-operator")
 func main() {
 	pflag.CommandLine.AddGoFlagSet(flag.CommandLine)
 
-	debug := false
+	debug := true
 	pflag.CommandLine.BoolVar(&debug, "debug", false, "Set logger in debug mode")
 
 	opt := options.GetOptions()
