@@ -41,6 +41,7 @@ func main() {
 	pflag.CommandLine.AddGoFlagSet(flag.CommandLine)
 
 	debug := true
+    #debug:=false
 	pflag.CommandLine.BoolVar(&debug, "debug", false, "Set logger in debug mode")
 
 	opt := options.GetOptions()
